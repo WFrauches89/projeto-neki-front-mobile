@@ -17,6 +17,11 @@ export const styles = StyleSheet.create({
         fontSize: 24,
         fontWeight: 'bold',
     },
+    scrollViewContent: {
+        flexGrow: 1,
+        justifyContent: 'flex-start',
+        alignItems: 'center',
+    },
     topoSkill: {
         fontSize: 30,
         fontWeight: 'bold',
@@ -46,24 +51,26 @@ export const styles = StyleSheet.create({
         marginRight: 10,
     },
     textContainer: {
-        flex: 1,
+
         color: 'black',
+        width: 250,
+
     },
     buttonContainer: {
-        marginLeft: 5,
+        marginLeft: -80,
     },
     modalContainer: {
-        flex: 0.9,
+        flex: 1,
         justifyContent: 'space-around',
         marginHorizontal: 20,
         marginVertical: 30,
         width: '90%',
-        backgroundColor: 'rgba(52, 52, 52, 0.8)',
+        backgroundColor: 'rgba(52, 52, 52, 0.5)',
         zIndex: 999,
         borderRadius: 20,
     },
     modalHeader: {
-        flexDirection: 'row',
+        flexDirection: 'column',
         alignItems: 'center',
 
     },
@@ -71,12 +78,16 @@ export const styles = StyleSheet.create({
         marginRight: 10,
     },
     logoImage: {
-        width: 50,
-        height: 50,
+
+        width: 180,
+        height: 180,
+        marginVertical: 50,
         resizeMode: 'contain',
+
     },
     modalTitle: {
-        fontSize: 20,
+        fontSize: 50,
+        marginLeft: -70,
         fontWeight: 'bold',
         color: 'black',
     },
@@ -106,6 +117,7 @@ export const styles = StyleSheet.create({
         width: '40%',
         alignItems: 'center',
         marginLeft: 25,
+        marginBottom: 40,
 
     },
 
@@ -138,8 +150,38 @@ export const styles = StyleSheet.create({
         color: 'white',
         fontSize: 28,
         fontWeight: 'bold',
+    },
+
+
+    modalTitleAddSkill: {
+        marginLeft: -140,
+        fontSize: 35,
+        fontWeight: 'bold',
+        marginBottom: 20,
+        color: 'white',
+    },
+
+
+
+    modalContent: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    modalTitle: {
+        marginLeft: 20,
+        fontSize: 35,
+        fontWeight: 'bold',
+        marginBottom: 20,
+        color: 'white',
+
+    },
+
+    skillOptionText: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        color: 'white',
     }
+
 });
-
-
 
